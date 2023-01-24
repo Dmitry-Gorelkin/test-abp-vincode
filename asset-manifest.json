@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test-abp-vincode/static/css/main.c3d5249d.css",
+    "main.js": "/test-abp-vincode/static/js/main.1021480c.js",
+    "static/js/368.f20130ba.chunk.js": "/test-abp-vincode/static/js/368.f20130ba.chunk.js",
+    "static/js/7.74b37922.chunk.js": "/test-abp-vincode/static/js/7.74b37922.chunk.js",
+    "static/js/520.3cea943d.chunk.js": "/test-abp-vincode/static/js/520.3cea943d.chunk.js",
+    "static/js/625.8a20a499.chunk.js": "/test-abp-vincode/static/js/625.8a20a499.chunk.js",
+    "static/js/313.239818c2.chunk.js": "/test-abp-vincode/static/js/313.239818c2.chunk.js",
+    "index.html": "/test-abp-vincode/index.html",
+    "main.c3d5249d.css.map": "/test-abp-vincode/static/css/main.c3d5249d.css.map",
+    "main.1021480c.js.map": "/test-abp-vincode/static/js/main.1021480c.js.map",
+    "368.f20130ba.chunk.js.map": "/test-abp-vincode/static/js/368.f20130ba.chunk.js.map",
+    "7.74b37922.chunk.js.map": "/test-abp-vincode/static/js/7.74b37922.chunk.js.map",
+    "520.3cea943d.chunk.js.map": "/test-abp-vincode/static/js/520.3cea943d.chunk.js.map",
+    "625.8a20a499.chunk.js.map": "/test-abp-vincode/static/js/625.8a20a499.chunk.js.map",
+    "313.239818c2.chunk.js.map": "/test-abp-vincode/static/js/313.239818c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3d5249d.css",
+    "static/js/main.1021480c.js"
+  ]
+}
