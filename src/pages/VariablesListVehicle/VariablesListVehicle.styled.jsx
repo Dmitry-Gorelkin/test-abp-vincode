@@ -29,10 +29,12 @@ export const VariablesItem = styled.li`
 
   border-radius: 4px;
 
+  color: ${p => p.theme.colors.dark};
+
   cursor: pointer;
 
   a {
-    color: ${p => p.theme.colors.dark};
+    color: unset;
     text-decoration: none;
     text-align: center;
   }
