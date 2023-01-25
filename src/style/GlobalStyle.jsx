@@ -40,9 +40,6 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const ScrollToTopStyled = styled(ScrollToTop)`
-  width: 35px;
-  height: 35px;
-
   bottom: 10px;
   right: 10px;
 
@@ -58,13 +55,13 @@ export const ScrollToTopStyled = styled(ScrollToTop)`
   }
 
   @media screen and (min-width: 480px) {
-    width: 40px;
-    height: 40px;
-
     right: 20px;
     bottom: 20px;
   }
   @media screen and (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+
     right: 40px;
     bottom: 40px;
   }
