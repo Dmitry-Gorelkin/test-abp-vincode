@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { LastFiveBox, LastFiveTitle, LastFiveItem } from './LastFiveVin.styled';
 
 const VINCODEJLS = 'vinCode';
 
@@ -25,18 +26,18 @@ export const LastFiveVin = ({ vin, onClickVin }) => {
   return (
     <>
       {fiveVin.length !== 0 && (
-        <div>
-          <h3>Последние запросы:</h3>
+        <LastFiveBox>
+          <LastFiveTitle>Последние запросы:</LastFiveTitle>
           <ul>
             {fiveVin.map((e, i) => {
               return (
-                <li key={i} onClick={() => onClickVin(e)}>
+                <LastFiveItem key={i} onClick={() => onClickVin(e)}>
                   {e}
-                </li>
+                </LastFiveItem>
               );
             })}
           </ul>
-        </div>
+        </LastFiveBox>
       )}
     </>
   );

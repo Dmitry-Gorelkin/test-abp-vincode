@@ -27,7 +27,7 @@ export const VariablesItem = styled.li`
 
   padding: 10px 5px;
 
-  border-radius: 4px;
+  border-radius: ${p => p.theme.borderRadius};
 
   color: ${p => p.theme.colors.dark};
 

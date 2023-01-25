@@ -11,7 +11,7 @@ export const GoBackBtn = styled(Link)`
   margin-bottom: 20px;
   padding: 10px 4px;
 
-  border-radius: 4px;
+  border-radius: ${p => p.theme.borderRadius};
 
   cursor: pointer;
 

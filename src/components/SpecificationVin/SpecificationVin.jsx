@@ -4,6 +4,7 @@ import { fetchVinCode } from 'api';
 import { SpecificationVinList } from 'components/SpecificationVinList/SpecificationVinList';
 import { Loader } from 'components/Loader/Loader';
 import { Notification } from 'components/Notification/Notification';
+import { SpecificationVinTitle } from './SpecificationVin.styled';
 
 const STATUS = {
   IDEAL: 'ideal',
@@ -34,8 +35,10 @@ export const SpecificationVin = ({ vin }) => {
   }, [vin]);
 
   return (
-    <>
-      <h2>По запрашеваемому: {vin}</h2>
+    <div>
+      <SpecificationVinTitle>
+        По запрашеваемому: <span>{vin}</span>
+      </SpecificationVinTitle>
 
       {status === STATUS.LOADING && <Loader />}
 
@@ -44,6 +47,6 @@ export const SpecificationVin = ({ vin }) => {
       )}
 
       {status === STATUS.ERROR && <Notification message={error} />}
-    </>
+    </div>
   );
 };

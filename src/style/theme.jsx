@@ -7,6 +7,7 @@ export const theme = Object.freeze({
     dark: '#212121',
   },
   boxShadow: '1px 1px 10px 3px rgba(0, 0, 0, 0.2)',
+  borderRadius: '10px',
 });
 
 /* @media screen and (min-width: 320px) {

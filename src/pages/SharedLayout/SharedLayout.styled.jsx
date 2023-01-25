@@ -50,7 +50,7 @@ export const LinkPage = styled(NavLink)`
   justify-content: center;
 
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: ${p => p.theme.borderRadius};
 
   color: ${p => p.theme.colors.dark};
   text-decoration: none;
@@ -79,7 +79,6 @@ export const LinkPage = styled(NavLink)`
 export const Main = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 
   padding-top: 20px;
   padding-bottom: 20px;
@@ -90,12 +89,12 @@ export const Main = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 `;

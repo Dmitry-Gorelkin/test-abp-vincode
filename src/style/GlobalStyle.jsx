@@ -43,7 +43,7 @@ export const ScrollToTopStyled = styled(ScrollToTop)`
   bottom: 10px;
   right: 10px;
 
-  border-radius: 10px;
+  border-radius: ${p => p.theme.borderRadius};
 
   color: ${p => p.theme.colors.dark};
 
