@@ -13,7 +13,7 @@ export const FormSearchVin = ({ onSubmitVin }) => {
     const vin = e.target.vin.value.trim().toLowerCase();
 
     if (vin === '') {
-      Notify.warning('Пустую строку нельзя запросить.');
+      Notify.warning('Введите VIN-код автомобиля.');
       return;
     }
 

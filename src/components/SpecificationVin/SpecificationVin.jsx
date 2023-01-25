@@ -37,7 +37,7 @@ export const SpecificationVin = ({ vin }) => {
   return (
     <div>
       <SpecificationVinTitle>
-        По запрашеваемому: <span>{vin}</span>
+        Расшифровка VIN-кода: <span>{vin}</span>
       </SpecificationVinTitle>
 
       {status === STATUS.LOADING && <Loader />}
