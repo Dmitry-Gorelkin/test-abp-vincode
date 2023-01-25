@@ -7,10 +7,14 @@ export const SpecificationVinTitle = styled.h2`
 
   margin-bottom: 10px;
 
-  font-size: 1.4em;
+  font-size: 1.2em;
 
   span {
     text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 1.4em;
   }
 
   @media screen and (min-width: 768px) {
