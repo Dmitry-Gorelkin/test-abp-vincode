@@ -26,6 +26,7 @@ const VariablesCard = () => {
       setStatus(STATUS.LOADING);
       try {
         const data = await fetchVariables();
+
         setVariabl(data.find(({ ID }) => ID === Number(id)));
         setStatus(STATUS.IDEAL);
       } catch (error) {
@@ -39,6 +40,17 @@ const VariablesCard = () => {
   }, [id]);
 
   const { Name, Description } = variabl;
+
+  const visualDescription = Description
+    ? Description.replaceAll('<p>', '')
+        .replaceAll('</p>', '')
+        .replaceAll('<ul>', '')
+        .replaceAll('</ul>', '')
+        .replaceAll('<li>', '')
+        .replaceAll('</li>', '')
+        .replaceAll('<br>', '')
+    : Description;
+
   return (
     <>
       <GoBackBtn to={backLinkHref.current}>
@@ -51,7 +63,7 @@ const VariablesCard = () => {
       {status === STATUS.IDEAL && (
         <>
           <Title>{Name}</Title>
-          <p>{Description}</p>
+          <p>{visualDescription}</p>
         </>
       )}
 
