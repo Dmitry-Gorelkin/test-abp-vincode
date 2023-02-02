@@ -26,8 +26,12 @@ const VariablesCard = () => {
       setStatus(STATUS.LOADING);
       try {
         const data = await fetchVariables();
+        const dataVariabl = data.find(({ ID }) => ID === Number(id));
 
-        setVariabl(data.find(({ ID }) => ID === Number(id)));
+        if (!dataVariabl) {
+          throw new Error('Undefined variable');
+        }
+        setVariabl(dataVariabl);
         setStatus(STATUS.IDEAL);
       } catch (error) {
         setStatus(STATUS.ERROR);
